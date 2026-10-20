@@ -20,15 +20,64 @@
     <!-- HEADER / NAVIGATION -->
     <header class="header" id="header">
         <div class="container nav-container">
-            <a href="#home" class="logo">
-                <div class="logo-mark">
-                    <i class="fa-solid fa-gears" aria-hidden="true"></i>
-                </div>
-                <div class="logo-text">
-                    <strong>MACJOLA</strong>
-                    <span>ENGINEERING LIMITED</span>
-                </div>
+            <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#home" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <!-- Blended Orange & Blue SVG Logo -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" style="height: 48px; width: auto;">
+                  <defs>
+                    <linearGradient id="macjolaOrangeBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stop-color="#FF6B00" />
+                      <stop offset="50%" stop-color="#E65100" />
+                      <stop offset="100%" stop-color="#003366" />
+                    </linearGradient>
+                    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stop-color="#FF6B00" />
+                      <stop offset="100%" stop-color="#003366" />
+                    </linearGradient>
+                  </defs>
+
+                  <!-- LOGO MARK: Gear + M Monogram -->
+                  <g transform="translate(10, 10)">
+                    <path d="M 50 10 A 40 40 0 1 0 50 90 A 40 40 0 1 0 50 10 Z" fill="none" stroke="url(#macjolaOrangeBlueGrad)" stroke-width="8" stroke-dasharray="18 6" />
+                    <circle cx="50" cy="50" r="44" fill="none" stroke="#002855" stroke-width="2" opacity="0.3" />
+                    <path d="M 28 68 L 28 32 L 50 54 L 72 32 L 72 68" fill="none" stroke="url(#macjolaOrangeBlueGrad)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" />
+                    <circle cx="50" cy="54" r="3.5" fill="#FF6B00" />
+                    <circle cx="28" cy="32" r="3" fill="#FF6B00" />
+                    <circle cx="72" cy="32" r="3" fill="#003366" />
+                  </g>
+
+                  <!-- LOGO TYPOGRAPHY -->
+                  <g transform="translate(115, 38)">
+                    <text x="0" y="22" font-family="'Montserrat', 'Inter', sans-serif" font-size="32" font-weight="800" fill="#002855" letter-spacing="2">
+                      MAC<tspan fill="#FF6B00">JOLA</tspan>
+                    </text>
+                    <text x="2" y="44" font-family="'Inter', sans-serif" font-size="12" font-weight="700" fill="#003366" letter-spacing="3.5">
+                      ENGINEERING LIMITED
+                    </text>
+                    <line x1="2" y1="52" x2="280" y2="52" stroke="url(#lineGrad)" stroke-width="2.5" opacity="0.95" />
+                  </g>
+                </svg>
             </a>
+            <nav class="navbar" id="navbar">
+                <a href="#home" class="nav-link active">HOME</a>
+                <a href="#who-we-are" class="nav-link">ABOUT</a>
+                <a href="#services" class="nav-link">SERVICES</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#industries" class="nav-link">INDUSTRIES</a>
+                <a href="#capabilities" class="nav-link">CAPABILITIES</a>
+                <a href="#quality" class="nav-link">HSE & QUALITY</a>
+                <a href="#leadership" class="nav-link">LEADERSHIP</a>
+                <a href="#careers" class="nav-link">CAREERS</a>
+                <a href="#contact" class="nav-link">CONTACT</a>
+            </nav>
+            <a href="#quote" class="nav-cta">Request a Quote</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
             <nav class="navbar" id="navbar">
                 <a href="#home" class="nav-link active">HOME</a>
                 <a href="#who-we-are" class="nav-link">ABOUT</a>
